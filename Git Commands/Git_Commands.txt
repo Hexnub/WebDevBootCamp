@@ -1,0 +1,48 @@
+Git was created by the Linux creator 'Linus Torval'
+on April of 2005;
+GitHub was launched in 2008 to host Git repositories;
+
+Important attribute of git is it's version control System called the "distributed version control".
+-different users (or teams of users) maintain their own repositories, instead of working from a central repository.
+-changes are stored as 'change sets' or 'patches'.
+   -tracks changes, not versions
+   -different from CVS and SVN, which track versions.
+   -change sets can be exchanged between repositories.
+
+
+git config --global user.name 'name'
+git congig --global user.email 'email@address.com'
+writes configuration to the
+IOS  >Users/.gitconfig folder
+WIN  >C:Users\.gitconfig 
+.System - system wide changed
+.System git config --system
+.User git config --global
+.Project git config
+
+to call your configurations use 
+git config --list
+
+git uses SHA-1 hash algorithm to create checksums.
+>git log #will show the the 40 digit hex check sum.
+
+Create folder you want to turn into a Repository 
+and make it your pwd
+> git init 
+and this folder is now a master repo
+
+>git status 
+//shows the changes
+
+>git add nameOfFile.html 
+//will add the file to the staging index;
+>git add . 
+//will gather all the files with changes and adds them to the staging index;
+
+git status 
+//again will show changes to be committed
+
+git commit -m 'My first commit'
+
+if files get deleted or changed use:
+git checkout -- . to restore them 
