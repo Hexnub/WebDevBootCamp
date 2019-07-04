@@ -46,3 +46,20 @@ git commit -m 'My first commit'
 
 if files get deleted or changed use:
 git checkout -- . to restore them 
+
+git remote -V -git will show you the server address git thinks you want to push to
+
+git remote set-url origin 'paste in the URL you copied from Github'
+
+if the above command does not work type
+git remote add origin 'paste in the URL you copied from Github'
+
+use Clone to pull in code from existing Github repo use:
+git clone https://github.com/hexnub/
+
+to push files to git hub use 
+git remote -v to confirm path 
+git push origin master 
+
+git pull origin master 
+to pull in repo 
